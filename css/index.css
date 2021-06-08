@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+   max-width:100%;
+   border:1px solid grey;
+}
+/*General Styles*/
+html{
+   font-size:62.5%;
+   background-color: #266035;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+   font-size:1.8rem;
+   color:#4f4f4f;
+   line-height:1.5;
+   font-family: 'PT Sans', sans-serif;
+   background-color:#FFFAFA;
+}
+
+h1, h2, h3{
+   font-family: 'Oxygen', sans-serif;
+   color: #266035;
+   text-align: center;
+   align-items: center;
+}
+
+
+h1{
+   font-size:5rem;
+   color: #FBFFFB;
+}
+h2{
+   font-size:3.5rem;
+}
+h3{
+   font-size:2.5rem;
+}
+section{
+   padding:4% 0;
+}
+a{
+   text-decoration:none;
+   color:#4f4f4f;
+}
+
+button {
+    background-color:#266035;
+    color: #FBFFFB;
+}
+/*Header Section Styles*/
+
+nav{
+   display:flex;
+   justify-content: space-between;
+   align-items:center;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 999;
+   background-color: rbga(255, 255, 255, 0.8)
+}
+.logo{
+   width:10%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo img{
+   width:50%;
+}
+.link{
+   width:60%;
+   display:flex;
+   justify-content: space-evenly;
+}
+/*Top Section Styles*/
+#top{
+   height:90vh;
+   background-image:url('../images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   text-align: center;
+}
+
+#top button {
+    background-color: #FBFFFB;
+    border: 2px solid #266035;
+    color: #266035;
+    margin-top: 5%;
+    transition: 2s;
+}
+
+#top button:hover {
+    color: #FBFFFB;
+    background-color: #266035;
+}
+
+/*About Section*/
+
+#about {
+    height: 80vh;
+    background-image: url('...images/about-img.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#about txt {
+    margin-right: 10%;
+    width: 25%;
+
+}
+/*Shop Section styles*/
+
+.container{
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.shoptxt .bgimg {
+   width: 50%;
+}
+
+.shoptxt {
+    display: flex;
+    justify-content: center;
+    padding: 6% 4%;
+    align-items: center;
+    text-align: center;
+}
+
+.shoptxt div button {
+    margin-top: 5%;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.succulants {
+    background-image: url('../images/succulants.jpg')
+}
+
+.cacti {
+    background-image: url('..images/cacti.jpg')
+}
+
+.tropicals {
+    background-image: url('..images/tropicals.jpg')
+}
+
+/*Footer Section Styles*/
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: #266035;
+}
+
+#contact a {
+    color: #fff;
+    text-align: left;
+}
+
+#contact h2 {
+    width: 100%;
+    color: #fff;
+}
+
+#left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left div, .right img {
+    width: 60%;
+}
+
+.bottom {
+    width: 100%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+/*Responsive Styles*/
+
+/*max-width scales down- desktop first*/
+/*min-width scales up - mobile first*/
+
+@media(max-width: 800px) {
+ /*If the screen size is actually 800px or smaller apply these styles*/
+}
+
+@media(max-width: 500px) {
+ /*If the screen size is actually 500px or smaller apply these sizes*/
+    nav {
+        flex-direction: column;
+    }
+
+    .links {
+        width: 80%;
+    }
+
+    #about {
+        background-image: none;
+        background-color: #e0e1e3;
+        justify-content: center;
+        height: auto;
+    }
+
+    #about .txt {
+        margin: 0;
+        width: 80%;
+    }
+
+    .bgimg {
+        height: 60vh;
+    }
+    .shoptxt .bgimg {
+        width: 90%;
+    } 
+
+    .one {
+        order: 0;
+    }
+
+    .two {
+        order: 1;
+    }
+
+    .three {
+        order: 2;
+    }
+
+    .four {
+        order: 3;
+    }
+
+    .five {
+        order: 4;
+    }
+
+    .six {
+        order: 5;
+    }
+}
